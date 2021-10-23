@@ -1,0 +1,138 @@
+/*-------VARIABLES--------*/
+:root{
+    --textos:'Nunito', sans-serif;
+    --titulo: 'Prompt', sans-serif;
+    --fondos: #243e36;
+    --tarjetas: #6b0504;
+    --botones: #a3320b;
+    --hover:#47a025;
+    --auxiliar: #d5e68d;
+}
+
+/*-------RESET GENERALES-------*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--fondos);
+}
+
+/*--------ENCABEZADO Y MENU DE NAVEGACION---------*/
+.titulo{
+    font-family: var(--titulo);
+    color: white;
+    font-weight: 700;
+}
+
+.titulo span{
+    color: var(--auxiliar);
+}
+
+.navegacion-principal .nav-link{
+    font-family: var(--textos);
+    color: var(--auxiliar);
+    text-transform: uppercase;
+    font-weight: 400;
+    transition: all .3s ease;
+}
+
+.navegacion-principal .nav-link:hover{
+    color: var(--hover);
+}
+
+/*-------IMAGEN DE PORTADA PRINCIPAL--------*/
+.imagen-bg{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.imagen-principal{
+    background-image: url(../img/portada.jpg);
+    height: 75vh;
+}
+
+
+/*-------SECCION ACTIVIDADES----------------*/
+
+
+.fade-in-image {
+    opacity: 50%;
+  }
+  
+  .fade-in-image:hover {
+    opacity:100%;
+    transition:opacity 0.5s ease;
+}
+
+
+/*---------SOBRE NOSOTROS-------------*/
+.nosotros{
+    background-color: var(--hover);
+}
+
+.imagen-nosotros{
+    background-image: url(../img/nosotros.jpg);
+    min-height: 25rem;
+}
+
+.textos-nosotros p{
+    font-family: var(--textos);
+    font-size: 18px;
+    text-align: justify;
+}
+
+
+/*--------HABITACIONES----------*/
+
+.habitaciones .bg-primary{
+    background-color: var(--tarjetas)!important;
+}
+
+.habitaciones .btn-success{
+    background-color: var(--botones);
+    border: none;
+}
+
+.habitaciones .btn-success:hover{
+    background-color: var(--hover);
+}
+
+/*-----NUESTROS PAQUETES DE VIAJE---------*/
+.anuncios .card{
+    background-color: var(--hover);
+}
+
+
+.anuncios .card-text{
+    min-height: 80px;
+    overflow: hidden;
+}
+
+.card-description .icono{
+    width: 35px;
+    margin: 10px;
+}
+
+.card-precio{
+    text-align: center;
+    font-weight: bolder;
+    color: white;
+}
+
+/*--------CONTACTO-------*/
+.contacto{
+    color: white;
+    margin-left: 25px;
+}
+
+.contacto .titulo{
+    color: var(--auxiliar);
+}
+
+.bg-pie{
+    background-color: var(--botones);
+}
